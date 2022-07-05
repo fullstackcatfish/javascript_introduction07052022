@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const add = function(val1, val2) {
+    let sum = val1 + val2;
+    return sum;
+    };
+
+    const subtract = function(val1, val2) {
+    let diff = val1 - val2;
+    return diff;
+    };
+
+    const multiply = function(val1, val2) {
+        let prod = val1 * val2;
+        return prod;
+    };
+
+    const divide = function(val1, val2) {
+        let dividend = val1 / val2;
+        return dividend;
+    };
+
+    let operator = prompt("Please enter an operator (+, -, *, /):").toString();
+    let valid = false;
+
+    while (valid === false) {
+        if (operator === "+") {
+            valid = true;
+            let op1 = parseInt(prompt("Enter the first value to add:"));
+            let op2 = parseInt(prompt("Enter the second value to add:"));
+
+            alert(add(op1, op2));
+        } else if (operator === "-") {
+            valid = true;
+            let op1 = parseInt(prompt("Enter the first value to subtract:"));
+            let op2 = parseInt(prompt("Enter the second value to subtract:"));
+
+            alert(subtract(op1, op2));
+        } else if (operator === "*") {
+            valid = true;
+            let op1 = parseInt(prompt("Enter the first value to multiply:"));
+            let op2 = parseInt(prompt("Enter the second value to multiply:"));
+
+            alert(multiply(op1, op2));
+        } else if (operator === "/") {
+            valid = true;
+            let op1 = parseInt(prompt("Enter the first value to divide:"));
+            let op2 = parseInt(prompt("Enter the second value to divide:"));
+
+            alert(divide(op1, op2));
+        } else {
+            valid = false;
+            operator = prompt("Bad operator; try again.");
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>
