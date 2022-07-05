@@ -36,25 +36,25 @@
             let op1 = parseInt(prompt("Enter the first value to add:"));
             let op2 = parseInt(prompt("Enter the second value to add:"));
 
-            alert(add(op1, op2));
+            alert(`${op1} plus ${op2} is ${add(op1, op2)}.`);
         } else if (operator === "-") {
             valid = true;
             let op1 = parseInt(prompt("Enter the first value to subtract:"));
             let op2 = parseInt(prompt("Enter the second value to subtract:"));
 
-            alert(subtract(op1, op2));
+            alert(`${op1} minus ${op2} is ${subtract(op1, op2)}.`);
         } else if (operator === "*") {
             valid = true;
             let op1 = parseInt(prompt("Enter the first value to multiply:"));
             let op2 = parseInt(prompt("Enter the second value to multiply:"));
 
-            alert(multiply(op1, op2));
+            alert(`${op1} multiplied by ${op2} is ${multiply(op1, op2)}.`);
         } else if (operator === "/") {
             valid = true;
             let op1 = parseInt(prompt("Enter the first value to divide:"));
             let op2 = parseInt(prompt("Enter the second value to divide:"));
 
-            alert(divide(op1, op2));
+            alert(`${op1} divided by ${op2} is ${divide(op1, op2)}.`);
         } else {
             valid = false;
             operator = prompt("Bad operator; try again.");
